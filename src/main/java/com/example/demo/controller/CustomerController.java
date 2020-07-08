@@ -58,6 +58,7 @@ public class CustomerController {
         customer1.setPassword(customer.getPassword());
         customer1.setUserName(customer.getUserName());
         customer1.setSdt(customer.getSdt());
+        customer1.setAvt(customer.getAvt());
         customerServicel.save(customer1);
         return new ResponseEntity<Customer>(HttpStatus.OK);
     }

@@ -33,6 +33,9 @@ public class Customer {
     private String diaChi;
 
     @Column
+    private String avt;
+
+    @Column
     private int sdt;
     @JsonBackReference
     @OneToMany(mappedBy = "customer")
